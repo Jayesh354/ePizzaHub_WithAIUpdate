@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/Backend/" />
+  <Folder Name="/Backend/API/">
+    <Project Path="ePizzaHub.API/ePizzaHub.API.csproj" />
+  </Folder>
+  <Folder Name="/Backend/Application/" />
+  <Folder Name="/Backend/Domain/" />
+  <Folder Name="/Backend/Infrastructure/" />
+  <Folder Name="/Frontend/">
+    <Project Path="ePizzaHub.UI/ePizzaHub.UI.csproj" />
+  </Folder>
+  <Folder Name="/UnitTest/" />
+</Solution>
