@@ -3,9 +3,15 @@
   <Folder Name="/Backend/API/">
     <Project Path="ePizzaHub.API/ePizzaHub.API.csproj" />
   </Folder>
-  <Folder Name="/Backend/Application/" />
-  <Folder Name="/Backend/Domain/" />
-  <Folder Name="/Backend/Infrastructure/" />
+  <Folder Name="/Backend/Application/">
+    <Project Path="ePizzaHub.Application/ePizzaHub.Application.csproj" Id="59dee471-d8f1-489e-94f1-6b37487acb49" />
+  </Folder>
+  <Folder Name="/Backend/Domain/">
+    <Project Path="ePizzaHub.Domain/ePizzaHub.Domain.csproj" Id="1bef2c6d-8248-401c-bec3-b3593c85a6b2" />
+  </Folder>
+  <Folder Name="/Backend/Infrastructure/">
+    <Project Path="ePizzaHub.Infrastructure/ePizzaHub.Infrastructure.csproj" Id="26d6018b-7d84-4e58-a98a-e43eddca7ce8" />
+  </Folder>
   <Folder Name="/Frontend/">
     <Project Path="ePizzaHub.UI/ePizzaHub.UI.csproj" />
   </Folder>
