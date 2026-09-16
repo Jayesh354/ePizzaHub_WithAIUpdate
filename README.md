@@ -114,7 +114,7 @@ The ePizzaHub project follows a **two-tier microservices architecture** with cle
 - `Microsoft.OpenApi` v3.10.2
 
 **ePizzaHub.API:**
-- `Microsoft.OpenApi` v3.10.2
+- `Swashbuckle.AspNetCore` v7.0.0 (Swagger/OpenAPI documentation)
 
 ### Language Features
 - **C# Version:** Latest (.NET 10)
@@ -272,6 +272,15 @@ Use the `ePizzaHub.API/ePizzaHub.API.http` file in Visual Studio to test endpoin
 - Select "Send HTTP Request"
 - View response in the result panel
 
+**Alternative: Swagger UI**
+
+The API includes integrated Swagger/OpenAPI documentation:
+1. Run the API (`F5` or `dotnet run` in ePizzaHub.API)
+2. Open browser to: `https://localhost:7150/`
+3. Explore and test all endpoints interactively
+
+For detailed Swagger setup and usage, see [SWAGGER_SETUP.md](SWAGGER_SETUP.md)
+
 ### Configuration Files
 
 **appsettings.json** - General application settings
@@ -323,6 +332,19 @@ dotnet build
 	- `ePizzaHub.API/ePizzaHub.API.csproj` - Removed OpenAPI package reference
 	- `ePizzaHub.API/Program.cs` - Removed `AddOpenApi()` and `MapOpenApi()` calls
   - **Impact:** Project now builds successfully; OpenAPI documentation features removed
+
+- **[2025-01-XX]** Implemented Swagger/OpenAPI documentation with Swashbuckle
+  - **Issue:** Need API documentation and testing interface
+  - **Solution:** Integrated Swashbuckle.AspNetCore for interactive Swagger UI
+  - **Files Modified:**
+	- `ePizzaHub.API/ePizzaHub.API.csproj` - Added Swashbuckle.AspNetCore v7.0.0
+	- `ePizzaHub.API/Program.cs` - Configured Swagger services and middleware
+  - **Features:**
+	- Interactive API documentation at `https://localhost:7150/` (Development mode only)
+	- Test endpoints directly from browser
+	- OpenAPI JSON specification at `/swagger/v1/swagger.json`
+  - **Access:** Run API and visit `https://localhost:7150/`
+  - **See:** [SWAGGER_SETUP.md](SWAGGER_SETUP.md) for detailed usage guide
 
 #### Added
 - **[2025-01-XX]** Initial project setup
