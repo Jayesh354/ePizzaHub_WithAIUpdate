@@ -1,4 +1,10 @@
+using ePizzaHub.Infrastructure;
+
 var builder = WebApplication.CreateBuilder(args);
+
+
+
+builder.Services.AddInfrastructureServices(builder.Configuration.GetConnectionString("DefaultConnection")!);
 
 // Add services to the container.
 
